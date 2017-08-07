@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import "_css3lib.scss";
+// 布局模式：智能
+$s-layout: vertical;
+// 间距
+$s-spacing: 10px;
+$s-sprite-dimensions: true;
+@import "i/s/*.png";
+body,
+html {
+    background: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.visility {
+    visibility: hidden;
+}
+
+
+/*自定义的渐变*/
+
+@mixin s-gradient($direction, $from, $to) {
+    background-color: $from;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient($direction, $from, $to);
+    background-image: -webkit-linear-gradient($direction, $from, $to);
+    background-image: -o-linear-gradient($direction, $from, $to);
+    background-image: linear-gradient($direction, $from, $to);
+}
+
+
+/*自定义背景loading*/
+
+@mixin loading {
+    background-image: url(i/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*自定义链接*/
+
+@mixin link($linkColor, $hoverColor) {
+    @include transition(all 0.3s);
+    &:link,
+    &:visited {
+        color: #{$linkColor};
+    }
+    &:hover {
+        color: #{$hoverColor};
+    }
+    span {
+        font-family: 'SimSun';
+    }
+}
+
+.black {
+    @include link(#26272b, #14c295);
+}
+
+
+/*x 6期 图标*/
+
+.icon {
+    &-fenqi {
+        float: left;
+        display: inline-block;
+        padding: 2px 5px 3px;
+        height: 14px;
+        line-height: 14px;
+        *line-height: 16px;
+        text-align: center;
+        color: #fff;
+        background: url(i/x.png) 5px 6px no-repeat #33bb7d;
+        font-size: 12px;
+        text-indent: 9px;
+        font-style: normal;
+    }
+    &-zhe {
+        float: left;
+        display: inline-block;
+        padding: 2px 5px 3px;
+        height: 14px;
+        line-height: 14px;
+        *line-height: 16px;
+        text-align: center;
+        color: #fff;
+        background: #ff7956;
+        font-size: 12px;
+        font-style: normal;
+    }
+}
+
+
+/* 按钮 */
+
+.btn {
+    &-buy:link,
+    &-buy:visited {
+        width: 86px;
+        height: 26px;
+        display: inline-block;
+        color: #fff;
+        font-family: '宋体';
+        border: 1px solid #ff5256;
+        border-radius: 3px;
+        line-height: 26px;
+        @include gradient(#ff676a, #ff5357);
+    }
+    &-buy:hover {
+        border: 1px solid #fe6a6d;
+        @include gradient(#fe7173, #fe6a6d);
+    }
+    &-add {
+        width: 98px;
+        height: 26px;
+        display: inline-block;
+        background: #fff;
+        line-height: 26px;
+        color: #5e5e5e;
+        border: 1px solid #92a9c3;
+    }
+}
+
+.line {
+    display: inline-block;
+    height: 0;
+    border: none;
+    border-top: 1px dotted #807b7e;
+    overflow: hidden;
+    margin: 10px auto 3px;
+}
+
+.ui-dialog.alert.type-1 {
+    .bttn {
+        width: 160px;
+        &.error {
+            width: 158px;
+            height: 14px;
+            background: #fbfbfb;
+            filter: none;
+            border: 1px solid #92a9c3;
+            color: #5e5e5e;
+        }
+    }
+    .cont {
+        line-height: 24px;
+        padding: 22px 40px;
+        height: auto;
+        color: #474e5d;
+        span {
+            color: #5e5e5e;
+        }
+    }
+}

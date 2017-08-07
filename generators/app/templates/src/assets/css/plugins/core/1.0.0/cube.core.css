@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/**
+ * css3lib\
+ *
+ * thanks: 
+ * http://bourbon.io/
+ * https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
+ * https://github.com/marvin1023/sassCore/blob/master/core/_css3.scss
+ */
+/* 全局颜色变量*/
+/* 红色 */
+/* 蓝色 */
+/* 灰色 从深到浅*/
+/* 文字 */
+/* 全局颜色变量*/
+/* 红色 */
+/* 蓝色 */
+/* 灰色 从深到浅*/
+/* 文字 */
+html, body {
+  min-width: 1200px;
+  font-family: 'Microsoft Yahei', '\5FAE\8F6F\96C5\9ED1', Arial, 'Hiragino Sans GB', '\5B8B\4F53';
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #5e5e5e;
+}
+
+div, form, img, ul, ol, li, th, td, dl, dt, dd, button, input, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input {
+  font-size: 12px;
+  vertical-align: middle;
+  color: #333;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  cursor: pointer;
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*clearfix*/
+.clearfix {
+  display: inline-table;
+  display: block;
+  zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.cu {
+  /* 标题文字样式 */
+  /* 内容文字样式 */
+}
+.cu-hide {
+  display: none;
+}
+.cu-h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #323232;
+}
+.cu-h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #323232;
+}
+.cu-h3 {
+  font-size: 24px;
+  color: #323232;
+}
+.cu-h4 {
+  font-size: 18px;
+  color: #323232;
+}
+.cu-h5 {
+  font-size: 16px;
+  color: #323232;
+}
+.cu-font-size16 {
+  font-size: 16px;
+}
+.cu-font-size14 {
+  font-size: 14px;
+}
+.cu-font-size12 {
+  font-size: 12px;
+}
+.cu-font-en {
+  font-family: 'Arial';
+}
+.cu-fl {
+  float: left;
+}
+.cu-fr {
+  float: right;
+}
+.cu-fn {
+  float: none;
+}

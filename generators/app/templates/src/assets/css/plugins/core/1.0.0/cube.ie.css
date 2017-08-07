@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.s-sprite {
+  background-image: url('../../../i/s-s604ac720ac.png');
+  background-repeat: no-repeat;
+}
+
+/**
+ * css3lib\
+ *
+ * thanks: 
+ * http://bourbon.io/
+ * https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
+ * https://github.com/marvin1023/sassCore/blob/master/core/_css3.scss
+ */
+/* 全局颜色变量*/
+/* 红色 */
+/* 蓝色 */
+/* 灰色 从深到浅*/
+/* 文字 */
+/* ie7-8 只做兼容样式 */
+/* 模拟select start */
+.cu-select-active .title {
+  padding: 0 10px;
+  margin: 0;
+  border-color: #cccccc;
+}
+.cu-select-active .title:hover {
+  border-color: #cccccc;
+}
+.cu-select-active ul {
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+
+.cu-select-s ul {
+  top: 23px;
+}
+
+.cu-select-l ul {
+  top: 31px;
+}
+
+.cu-select-xl ul {
+  top: 39px;
+}
+
+.cu-select-xxl ul {
+  top: 45px;
+}
+
+/* 宽度 */
+.cu-select-w-s ul {
+  width: 196px;
+}
+
+/* 模拟select end */

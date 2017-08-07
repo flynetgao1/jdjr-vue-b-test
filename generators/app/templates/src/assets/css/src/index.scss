@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "_public.scss";
+@import "_banner.scss";
+@import "_module2.scss";
+@import "_module3.scss";
+@import "_module4.scss";
+
+/*第一个广告*/
+.ad {
+    &-1 {
+        margin: 20px 0 16px 0;
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "status": 2,
+    "addAmount": {
+        "status": 0,
+        "msg": "您暂时无法提高白条额度，请继续关注校园白条动态哦~",
+        "type": 2,
+        "href": "http://www.baidu.com",
+        "isShow": true
+    },
+    "product": {
+        "title": "农心方便面辣白菜拉面 120g*5袋 五连包",
+        "skuId": "123456",
+        "price": "166.35",
+        "stage": 7,
+        "itemImgUrl": "http://static.360buyimg.com/finance/consumer/stuBaitiao/index/3.0.0/testImage/product.jpg"
+
+    },
+    "btinfo": {
+        "faceImgUrl": "",
+        "nickName": "盖世英雄",
+        "sevenpay": 333,
+        "allpay": 817.05,
+        "ablequota": 7393.05,
+        "allquota": 10000,
+        "freepay": 100,
+        "freesavepay": 1000.25,
+        "savepay": 100,
+        "beyondPercent": "10%"
+    },
+    "news": [{
+        "title": "平板免息低至199元起",
+        "href": "http://www.baidu.com"
+    }, {
+        "title": "运动户外满减不停运动户外满减不停",
+        "href": "http://www.baidu.com"
+    }],
+    "rightImgSummary": "释放耳机青春!"
+}

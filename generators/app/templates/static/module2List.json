@@ -1,0 +1,33 @@
+[{
+	"skuId": "123456",
+	"itemImageUrl": "http://static.360buyimg.com/finance/consumer/stuBaitiao/index/3.0.0/testImage/product.png",
+	"itemName": "农心方便面辣白菜拉面 120g*5袋 五连包",
+	"price": "123.456",
+	"stag": 24,
+	"isOwn":false,
+	"isFinish": true
+}, {
+	"skuId": "123456",
+	"itemImageUrl": "http://img12.360buyimg.com/n1/jfs/t169/140/1093154023/98382/d4759907/53a2a472N53f753cb.jpg",
+	"itemName": "三星 Galaxy S5 (G9008W) 酷碳黑 移动4G手机 双卡双待",
+	"price": "2599.00",
+	"stag": 6,
+	"isOwn":false,
+	"isFinish": false
+}, {
+	"skuId": "123456",
+	"itemImageUrl": "http://static.360buyimg.com/finance/consumer/stuBaitiao/index/3.0.0/testImage/product.png",
+	"itemName": "农心方便面辣白菜拉面 120g*5袋 五连包",
+	"price": "123.456",
+	"stag": 24,
+	"isOwn":false,
+	"isFinish": false
+}, {
+	"skuId": "123456",
+	"itemImageUrl": "http://static.360buyimg.com/finance/consumer/stuBaitiao/index/3.0.0/testImage/product.png",
+	"itemName": "农心方便面辣白菜拉面 120g*5袋 五连包",
+	"price": "123.456",
+	"stag": 6,
+	"isOwn":false,
+	"isFinish": false
+}]

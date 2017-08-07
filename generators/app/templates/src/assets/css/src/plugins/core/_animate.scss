@@ -1,0 +1,19 @@
+@mixin translate($name, $type, $from, $to) {
+    @include keyframes($name, webkit moz ms spec) {
+        from {
+            @if $type == "topBottom" {
+                @include transform(translate3d(0, $from, 0));
+            }
+            @else {
+                @include transform(translate3d($from, 0, 0));
+            }
+            opacity: 0;
+            filter: alpha(opacity = 0);
+        }
+        to {
+            @include transform(none);
+            opacity: 1;
+            filter: alpha(opacity = 100);
+        }
+    }
+}

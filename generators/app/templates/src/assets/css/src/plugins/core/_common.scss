@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 全局颜色变量*/
+/* 红色 */
+$cube-color-red: #f52f3e;
+
+/* 蓝色 */
+$cube-color-blue: #5b9fe2;
+
+/* 灰色 从深到浅*/
+$cube-color-gray-1: #323232;
+$cube-color-gray-2: #5e5e5e;
+$cube-color-gray-3: #a5a5a5;
+$cube-color-gray-4: #cccccc;
+$cube-color-gray-5: #e6e6e6;
+$cube-color-gray-6: #f4f4f4;
+
+/* 文字 */
+@mixin cube-text($weight, $size, $color) {
+    @if $weight {
+        font-weight: #{$weight};
+    }
+    @if $size {
+        font-size: #{$size}px;
+    }
+    @if $color {
+        color: #{$color};
+    }
+}
+
+@mixin cube-boderRadius($radius) {
+    @include prefixer(border-radius, $radius, webkit moz ms spec);
+}

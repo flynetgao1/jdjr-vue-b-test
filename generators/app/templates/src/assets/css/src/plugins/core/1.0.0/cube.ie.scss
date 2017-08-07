@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+//布局模式：智能
+$s-layout: vertical;
+
+//间距
+$s-spacing: 10px;
+$s-sprite-dimensions: true;
+
+@import "i/s/*.png";
+@import "../_css3lib.scss";
+
+/* ie7-8 只做兼容样式 */
+
+/* 模拟select start */
+.cu {
+    &-select {
+        &-active {
+            .title {
+                padding: 0 10px;
+                margin: 0;
+                border-color: #{$cube-color-gray-4};
+
+                &:hover {
+                    border-color: #{$cube-color-gray-4};
+                }
+            }
+
+            ul {
+                border: 1px solid #{$cube-color-gray-4};
+                border-top: none;
+            }
+        }
+    }
+}
+
+@mixin cu-select($size, $height, $liHeight, $fontSize: 12px) {
+    .cu-select {
+        &-#{$size} {
+
+            ul {
+                top: -1 + $height;
+            }
+        }
+    }
+}
+
+@mixin cu-select-w($size, $width) {
+    .cu-select-w-#{$size} {
+
+        ul {
+            width: -2 + $width;
+        }
+    }
+}
+
+@include cu-select(s, 24px, 40px);
+
+@include cu-select(l, 32px, 40px, 14px);
+
+@include cu-select(xl, 40px, 40px, 16px);
+
+@include cu-select(xxl, 46px, 40px, 16px);
+
+/* 宽度 */
+@include cu-select-w(s, 198px);
+
+/* 模拟select end */

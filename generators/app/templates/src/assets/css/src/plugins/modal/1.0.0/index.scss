@@ -1,0 +1,172 @@
+@charset "utf-8";
+//布局模式：智能
+$s-layout: vertical;
+//间距
+$s-spacing: 10px;
+$s-sprite-dimensions: true;
+@import "i/s/*.png";
+@import "../../core/_css3lib.scss";
+.cu {
+    &-dialog {
+        // float: left;
+        margin: 0 auto;
+        min-width: 490px;
+        padding-bottom: 40px;
+        background: #fff;
+        border: 8px solid rgba(0, 0, 0, 0.25);
+        &-title {
+            // float: left;
+            width: 100%;
+            height: 46px;
+            line-height: 46px;
+            text-indent: 20px;
+            color: #{$cube-color-gray-1};
+            font-size: 16px;
+            border-bottom: 1px solid #{$cube-color-gray-5};
+            position: relative;
+        }
+        &-cont {
+            padding: 50px 40px 40px;
+            text-align: center;
+            strong {
+                margin-bottom: 2px;
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                line-height: 46px;
+                font-size: 24px;
+                color: #{$cube-color-gray-1};
+                i {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 10px;
+                }
+                span {
+                    float: left;
+                    text-align: left;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #{$cube-color-gray-2};
+            }
+            &.success {
+                i {
+                    @include s-sprite(icon-success);
+                }
+            }
+            &.error {
+                i {
+                    @include s-sprite(icon-error);
+                }
+            }
+            &.warn {
+                i {
+                    @include s-sprite(icon-warn);
+                }
+            }
+        }
+        &-close {
+            display: block;
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            z-index: 1;
+            @include s-sprite(close);
+        }
+        //协议弹层
+        &-agree {
+            border: 6px solid rgba(0, 0, 0, 0.1);
+            padding: 0;
+            width: 970px;
+            padding: 10px 20px;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            z-index: 1001;
+            display: none;
+            .panelwrap {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .paneltitle {
+                // background: url(i/agree-title-bg.png) 0 center repeat-x;
+                // background-position: 0 28px;
+                // background-repeat: repeat-x;
+                text-align: center;
+                .text {
+                    font: bold 18px/58px microsoft yahei;
+                    padding: 0 15px;
+                    background: #fff;
+                }
+            }
+            .panelcon {
+                height: 438px;
+                border: 1px solid #d8dbe6;
+                background: #fbfbfb;
+                // max-height: 438px;
+                overflow-y: auto;
+                font: 14px/29px microsoft yahei;
+                // padding: 5px 0;
+                color: #5e5e5e;
+                &.iframe {
+                    overflow: hidden;
+                }
+            }
+            .panelbtn {
+                font: 16px/40px microsoft yahei;
+                height: 72px;
+                padding-top: 25px;
+                overflow: hidden;
+                text-align: center;
+                // .sure {
+                //     background: #f15e54;
+                //     color: #fff;
+                //     border-bottom: 2px solid #c7453c;
+                //     border-radius: 2px;
+                //     padding: 0 20px;
+                //     display: inline-block;
+                //     margin-right: 10px;
+                //     &:hover {
+                //         background: #f5675d;
+                //         background: -moz-linear-gradient(top, #fb746b, #f5675d);
+                //         background: -webkit-gradient(linear, 0 0, 0 100%, from(#fb746b), to(#f5675d));
+                //     }
+                // }
+                .download {
+                    border: 1px solid #92a9c3;
+                    border-radius: 2px;
+                    background: #fbfbfb;
+                    color: #5e5e5e;
+                    padding: 0 45px;
+                    display: inline-block;
+                }
+            }
+            .panelclose {
+                position: absolute;
+                @include s-sprite(panelclose);
+                text-indent: -9999em;
+                top: -15px;
+                right: -15px;
+            }
+            .panel-table {
+                width: 682px;
+                border-top: 1px solid #000;
+                border-left: 1px solid #000;
+                th {
+                    background: #d9d9d9;
+                }
+                th,
+                td {
+                    border: none;
+                    line-height: 38px;
+                    border-right: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                    text-align: center;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

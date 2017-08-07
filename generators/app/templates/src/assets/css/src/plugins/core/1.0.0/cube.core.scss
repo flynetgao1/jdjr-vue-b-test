@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+//布局模式：智能
+$s-layout: vertical;
+
+//间距
+$s-spacing: 10px;
+$s-sprite-dimensions: true;
+
+//@import "i/s/*.png";
+@import "../_css3lib.scss";
+@import "../_common.scss";
+@import "_cube.reset.scss";
+
+.cu {
+    &-hide {
+        display: none;
+    }
+
+    /* 标题文字样式 */
+    &-h1 {
+        @include cube-text(bold, 36, #{$cube-color-gray-1});
+    }
+
+    &-h2 {
+        @include cube-text(bold, 30, #{$cube-color-gray-1});
+    }
+
+    &-h3 {
+        @include cube-text("", 24, #{$cube-color-gray-1});
+    }
+
+    &-h4 {
+        @include cube-text("", 18, #{$cube-color-gray-1});
+    }
+
+    &-h5 {
+        @include cube-text("", 16, #{$cube-color-gray-1});
+    }
+
+    /* 内容文字样式 */
+    &-font {
+        &-size16 {
+            @include cube-text("", 16, "");
+        }
+
+        &-size14 {
+            @include cube-text("", 14, "");
+        }
+
+        &-size12 {
+            @include cube-text("", 12, "");
+        }
+
+        &-en {
+            font-family: 'Arial';
+        }
+    }
+
+    &-fl {
+        float: left;
+    }
+
+    &-fr {
+        float: right;
+    }
+
+    &-fn {
+        float: none;
+    }
+}
