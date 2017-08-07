@@ -10,7 +10,9 @@
         "type": "git",
         "url": "git+https://github.com/flynetgao1/jdjr-vue-b-test.git"
     },
-    "keywords": ["yeoman-generator"],
+    "keywords": [
+        "yeoman-generator"
+    ],
     "dependencies": {
         "chalk": "^1.1.3",
         "co": "^4.6.0",
@@ -23,5 +25,8 @@
     "bugs": {
         "url": "https://github.com/flynetgao1/jdjr-vue-b-test/issues"
     },
-    "homepage": "https://github.com/flynetgao1/jdjr-vue-b-test#readme"
+    "homepage": "https://github.com/flynetgao1/jdjr-vue-b-test#readme",
+    "devDependencies": {
+        "yeoman-generator": "^1.1.1"
+    }
 }
