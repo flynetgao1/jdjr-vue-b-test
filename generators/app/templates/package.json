@@ -1,5 +1,5 @@
 {
-    "name": "guige_vue_study",
+    "name": "<%=this.appname%>",
     "version": "1.0.2",
     "description": "vue study",
     "author": "gaoxiang",
