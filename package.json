@@ -1,7 +1,7 @@
 {
     "name": "generator-vue2b",
     "version": "1.0.0",
-    "description": "后台管理系统",
+    "description": "vue+vuex后台管理系统",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,7 @@
         "type": "git",
         "url": "git+https://github.com/flynetgao1/jdjr-vue-b-test.git"
     },
-    "keywords": [
-        "yeoman-generator",
-        "vue",
-        "2b"
-    ],
+    "keywords": ["yeoman-generator"],
     "dependencies": {
         "chalk": "^1.1.3",
         "co": "^4.6.0",
