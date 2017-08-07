@@ -1,7 +1,7 @@
 {
     "name": "generator-vue2b",
-    "version": "1.0.1",
-    "description": "vue+vuex后台管理系统",
+    "version": "1.0.3",
+    "description": "my test project",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,15 +18,13 @@
         "co": "^4.6.0",
         "co-prompt": "^1.0.0",
         "commander": "^2.9.0",
-        "yosay": "^1.0.5"
+        "yosay": "^1.0.5",
+        "yeoman-generator": "^0.24.1"
     },
     "author": "gaoxiang",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/flynetgao1/jdjr-vue-b-test/issues"
     },
-    "homepage": "https://github.com/flynetgao1/jdjr-vue-b-test#readme",
-    "devDependencies": {
-        "yeoman-generator": "^0.24.1"
-    }
+    "homepage": "https://github.com/flynetgao1/jdjr-vue-b-test#readme"
 }
